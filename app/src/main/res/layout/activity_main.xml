@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:scaleType="centerInside"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_marginTop="150dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/random_ball"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/linear"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp">
+
+            <ImageView
+                android:id="@+id/ball1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/ball1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="1"
+                android:id="@+id/ballnum1"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@id/ball1"
+                app:layout_constraintBottom_toBottomOf="@id/ball1"
+                app:layout_constraintStart_toStartOf="@id/ball1"
+                app:layout_constraintEnd_toEndOf="@id/ball1"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp">
+
+            <ImageView
+                android:id="@+id/ball2"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/ball2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:id="@+id/ballnum2"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@id/ball2"
+                app:layout_constraintBottom_toBottomOf="@id/ball2"
+                app:layout_constraintStart_toStartOf="@id/ball2"
+                app:layout_constraintEnd_toEndOf="@id/ball2"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp">
+
+            <ImageView
+                android:id="@+id/ball3"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/ball3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/ballnum3"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@id/ball3"
+                app:layout_constraintBottom_toBottomOf="@id/ball3"
+                app:layout_constraintStart_toStartOf="@id/ball3"
+                app:layout_constraintEnd_toEndOf="@id/ball3"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp">
+
+            <ImageView
+                android:id="@+id/ball4"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/ball4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:id="@+id/ballnum4"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@id/ball4"
+                app:layout_constraintBottom_toBottomOf="@id/ball4"
+                app:layout_constraintStart_toStartOf="@id/ball4"
+                app:layout_constraintEnd_toEndOf="@id/ball4"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp">
+
+            <ImageView
+                android:id="@+id/ball5"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/ball5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:id="@+id/ballnum5"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@id/ball5"
+                app:layout_constraintBottom_toBottomOf="@id/ball5"
+                app:layout_constraintStart_toStartOf="@id/ball5"
+                app:layout_constraintEnd_toEndOf="@id/ball5"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ball6"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/ball6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="1"
+                android:id="@+id/ballnum6"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@id/ball6"
+                app:layout_constraintBottom_toBottomOf="@id/ball6"
+                app:layout_constraintStart_toStartOf="@id/ball6"
+                app:layout_constraintEnd_toEndOf="@id/ball6"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
+        app:layout_constraintTop_toBottomOf="@id/random_ball"
+        app:layout_constraintStart_toStartOf="@id/random_ball"
+        app:layout_constraintEnd_toEndOf="@id/random_ball"
+        android:id="@+id/arrow"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/choice_num"
+        android:text="추첨하기"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
