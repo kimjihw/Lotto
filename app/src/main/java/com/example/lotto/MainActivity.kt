@@ -7,6 +7,7 @@ import android.os.Looper
 import android.os.Looper.getMainLooper
 import android.os.Message
 import android.util.Log
+import android.view.WindowManager
 import com.example.lotto.databinding.ActivityMainBinding
 import java.security.SecureRandom
 import java.util.*
@@ -42,18 +43,20 @@ class MainActivity : AppCompatActivity() {
 		super.onCreate(savedInstanceState)
 		setContentView(binding.root)
 
+		window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+
 		var num = ArrayList<Int>()
 		val rand = SecureRandom()
-		for(i in 0..5){
+		for (i in 0..5) {
 			var tmp = rand.nextInt(45) + 1
-			while(tmp in num){
+			while (tmp in num) {
 				tmp = rand.nextInt(45) + 1
 			}
 			num.add(tmp)
 		}
 		var sortNum = num.sorted()
-
-
 
 		started = true
 		thread(start = true) {
@@ -68,7 +71,6 @@ class MainActivity : AppCompatActivity() {
 				}
 			}
 		}
-
 		binding.choiceNum.setOnClickListener {
 			if (started) {
 				started = false
