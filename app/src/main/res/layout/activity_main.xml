@@ -66,7 +66,7 @@
 
             <ImageView
                 android:id="@+id/ball1"
-                android:layout_width="45dp"
+                android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:background="@drawable/ball1"
                 app:layout_constraintStart_toStartOf="parent"
@@ -96,7 +96,7 @@
 
             <ImageView
                 android:id="@+id/ball2"
-                android:layout_width="45dp"
+                android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:background="@drawable/ball2"
                 app:layout_constraintStart_toStartOf="parent"
@@ -125,7 +125,7 @@
 
             <ImageView
                 android:id="@+id/ball3"
-                android:layout_width="45dp"
+                android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:background="@drawable/ball3"
                 app:layout_constraintStart_toStartOf="parent"
@@ -154,7 +154,7 @@
 
             <ImageView
                 android:id="@+id/ball4"
-                android:layout_width="45dp"
+                android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:background="@drawable/ball4"
                 app:layout_constraintStart_toStartOf="parent"
@@ -183,7 +183,7 @@
 
             <ImageView
                 android:id="@+id/ball5"
-                android:layout_width="45dp"
+                android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:background="@drawable/ball5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -211,7 +211,7 @@
 
             <ImageView
                 android:id="@+id/ball6"
-                android:layout_width="45dp"
+                android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:background="@drawable/ball6"
                 app:layout_constraintStart_toStartOf="parent"
