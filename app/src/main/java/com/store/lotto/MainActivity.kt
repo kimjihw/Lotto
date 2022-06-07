@@ -1,17 +1,12 @@
-package com.example.lotto
+package com.store.lotto
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
-import android.os.Looper.getMainLooper
-import android.os.Message
-import android.util.Log
+import android.os.*
 import android.view.WindowManager
-import com.example.lotto.databinding.ActivityMainBinding
+import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
+import com.store.lotto.databinding.ActivityMainBinding
 import java.security.SecureRandom
 import java.util.*
-import java.util.logging.Logger
 import kotlin.collections.ArrayList
 import kotlin.concurrent.thread
 
@@ -39,6 +34,7 @@ class MainActivity : AppCompatActivity() {
 		}
 	}
 
+	@RequiresApi(Build.VERSION_CODES.O)
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
 		setContentView(binding.root)
@@ -48,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 
 
 		var num = ArrayList<Int>()
-		val rand = SecureRandom()
+		val rand = SecureRandom.getInstanceStrong()
 		for (i in 0..5) {
 			var tmp = rand.nextInt(45) + 1
 			while (tmp in num) {
@@ -61,7 +57,7 @@ class MainActivity : AppCompatActivity() {
 		started = true
 		thread(start = true) {
 			while (started) {
-				Thread.sleep(80)
+				Thread.sleep(70)
 				if (started) {
 					recycle += 1
 					handler.sendEmptyMessage(0)
