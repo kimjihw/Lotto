@@ -1,4 +1,4 @@
-package com.example.lotto
+package com.store.lotto
 
 import org.junit.Test
 

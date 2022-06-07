@@ -1,4 +1,4 @@
-package com.example.lotto
+package com.store.lotto
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
